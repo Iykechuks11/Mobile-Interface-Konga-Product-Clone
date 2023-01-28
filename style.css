@@ -1,0 +1,163 @@
+/* CSS RESET */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* UTILITY STYLE */
+body {
+  line-height: 2.4rem;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  height: 100vh;
+}
+
+section {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* HEADER */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  height: 40px;
+  width: 100%;
+  background: #fff;
+  right: 0;
+  left: 0;
+  top: 0;
+  padding: 0 20px;
+  box-shadow: 0px 2px 2px #ddd;
+}
+
+nav a {
+  background-color: rgb(56, 116, 56);
+  color: #fff;
+  padding: 0 10px;
+}
+
+/* SECTION-ONE */
+img {
+  width: 100%;
+}
+
+/* SECTION-TWO */
+.product-heading, .product {
+  font-family: 'Roboto', sans-serif;
+}
+
+.product {
+  color: #333;
+  font-weight: 100;
+}
+
+.one {
+  color: #000;
+}
+
+.product-brand-name {
+  color: blue;
+}
+
+.product-purchase a {
+  background-color: rgb(56, 116, 56);
+  color: #fff;
+  padding: 10px 50px;
+  border: none;
+  border-radius: 5px;
+}
+
+.product-purchase, .product-price, .product-delivery {
+  margin: 10px auto;
+}
+
+.delivery-state {
+  background-color: yellow;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 20px 10px;
+}
+
+.product-delivery a {
+  color: #000;
+}
+
+i {
+  margin-right: 10px;
+  font-size: 25px;
+  color: #aa336a;
+}
+
+.fa-regular {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  margin-left: 50px;
+}
+
+.product-delivery {
+  display: flex;
+}
+
+.product-delivery-detail-2 {
+  margin-left: 50px;
+}
+
+.product-quantity-counter {
+  border: 1px solid #ddd;
+  width: 80px;
+  border-radius: 5px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.value {
+  margin: 0 10px;
+  padding: 0 10px 39px 10px;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  height: 30px;
+}
+
+.p {
+  margin-top: 50px;
+}
+
+/* RESPONSIVE STYLE */
+@media (max-width: 700px) {
+  section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+  }
+
+  .product-heading {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  i {
+    font-size: 10px;
+  }
+
+  .product-delivery {
+    font-size: 8px;
+  }
+
+}
